@@ -1,0 +1,145 @@
+.form{
+    width: 50%;
+
+    align-items: column;
+    margin-left: 25%;
+    background-color: rgb(216, 216, 219);
+    height: auto;
+}
+.form h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.form img{
+    width: 100%;
+    min-width: 300px;
+}
+.form .conteudo{
+    width: 100%;
+}
+.form .div-botao-calcular {
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+
+}
+.form .botao-calcular {
+    
+    background-color: #0583F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    
+}
+
+
+
+
+/* Estilos para o select com a classe .transparent-select */
+.select-volume {
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove a borda de foco ao clicar */
+    font-size: 18px; /* Tamanho do texto em cada option */
+}
+.select-transparent{
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove a borda de foco ao clicar */
+}
+.centralizado{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+
+.inner-div {
+    /*configurações do imput*/
+    margin: 10px;
+    background: #E9E9ED;
+    margin-right: 5px;
+}
+
+/* Estilo para tornar o fundo do input transparente */
+.inner-div input {
+    background-color: transparent;
+    width: 95%;
+    border-color: transparent;
+}
+
+.inner-div input:focus{
+    width: 99%;
+    border: 2px solid rgb(142, 135, 135); /* Defina a cor da borda desejada quando o input está selecionado */
+    outline: none; /* Remove a borda padrão do navegador que geralmente aparece ao selecionar um input */
+}
+
+
+/* Pop Op */
+
+.button-popup {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button-popup:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    padding-top: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content-popup {
+    max-height: 30%;
+    overflow: auto;
+  }

@@ -1,0 +1,415 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E6E6E6;
+    align-items: center;
+}
+body.dark {
+	background: #006270;
+}
+.header.dark{
+  background: #000000;
+}
+
+.content{
+  /* width: 50%; */
+  align-items: column;
+  /* margin-left: 25%; */
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  margin-top: 6%;
+  border-radius: 3%;
+  
+}
+
+
+
+/* Se [largura do dispositivo] for menor ou igual a 768px, então execute o {...} */
+@media (max-width: 768px) {
+  .content {
+    color: #000000; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+    width: 100%;
+  }
+}
+
+/* Se [largura do dispositivo] for entre 768px e 600px, então execute o {...} */
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .content {
+  color: #000000; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+  width: 80%;
+}
+}
+
+/* Se [largura do dispositivo] for maior ou igual a 768px, então execute o {...} */
+@media (min-width: 768px) {
+.content {
+  color: #000000; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+  width: 40%;
+}
+}
+
+
+/* Estilos padrão para a div formDosagem */
+.formDosagem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 40px ;
+    background-color: white;
+    border-radius: 1%;
+
+    padding: 1rem;
+    border-radius: 10px;
+    /* min-width: 30%; */
+    overflow: auto;
+}
+.divs-centrais{
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Alteração para flex-direction: column */
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align: auto;
+}
+
+/* h1{
+    margin-left: 25%;
+} */
+
+/* Classe para estilo "bold"
+.bold {
+    font-weight: bold;
+}
+
+Classe para estilo "semi-bold" 
+.semi-bold {
+    font-weight: 600; /* 600 é uma típica representação de semi-bold 
+}
+*/ 
+/* # é usado para id*/
+#dados-gerais{
+    background-color: #0583F2; 
+    color: white; 
+    margin-bottom: 1px; 
+}
+
+/* Estilos CSS para a div e seus elementos */
+.divFormato {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 98%; /* Largura da div, ajuste conforme necessário */
+    background: #E9E9ED;
+    margin-bottom: 10px;
+    
+}
+
+
+select {
+    padding: 5px; /* Espaçamento interno para o select */
+    border-top: none;
+}
+/* Estilo para ocultar a segunda div por padrão */
+.hidden {
+    display: none;
+}
+
+.proporcao {
+    display: flex;
+}
+
+.inner-div {
+    /*configurações do imput*/
+    margin: 10px;
+    background: #E9E9ED;
+    margin-right: 5px;
+}
+
+/* Estilo para tornar o fundo do input transparente */
+.inner-div input {
+    background-color: transparent;
+    width: 95%;
+    border-color: transparent;
+}
+
+.inner-div input:focus{
+    width: 99%;
+    border: 2px solid rgb(142, 135, 135); /* Defina a cor da borda desejada quando o input está selecionado */
+    outline: none; /* Remove a borda padrão do navegador que geralmente aparece ao selecionar um input */
+}
+.div-botao-calcular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao-calcular {
+    background-color: #0583F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    
+}
+/* Estilos para o select com a classe .transparent-select */
+.select-volume {
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove a borda de foco ao clicar */
+    font-size: 18px; /* Tamanho do texto em cada option */
+}
+.select-transparent{
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove a borda de foco ao clicar */
+}
+#div-titulo {
+  display: inline-block; /* Isso faz com que a div se comporte como um elemento em linha e permitirá que outros elementos fiquem ao lado dela */
+}
+
+.centralizado{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+.descricao{
+    display: flex; /* Torna as divs filhas flexíveis */
+    justify-content: space-between; /* Distribui as divs igualmente horizontalmente */
+    background-color: #007bff;
+}
+
+.box{
+    width: 33%;
+    display: flex; /* Torna o texto verticalmente centralizado */
+    color: white;
+    justify-content: center;  /* Centraliza horizontalmente */
+}
+.font-9{
+    font-size: 11px;
+
+}
+
+#div-cimento{
+    justify-content: space-between; 
+    display: flex; 
+    margin-bottom: 10px;
+}
+
+.div-descricao{
+    /* background-color: red; */
+    background-color: #E6E6E6;
+    height: 50px;
+    width: 33%
+}
+
+.div-quantidade{
+    
+    /* background-color: rgb(0, 255, 4);  */
+    background-color: #E6E6E6;
+    height: 50px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+
+}
+.div-unidade{
+    /* background-color: rgb(200, 255, 0);  */
+    background-color: #E6E6E6;
+    height: 50px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+#resultado {
+    border: 2px solid #007bff; /* Define uma borda azul com 2px de espessura */
+    margin-bottom: 50px;
+
+}
+#resultado2 {
+    border: 2px solid #007bff; /* Define uma borda azul com 2px de espessura */
+    margin-bottom: 50px;
+    margin-left: 3%;
+}
+#resultado3 {
+    border: 2px solid #007bff; /* Define uma borda azul com 2px de espessura */
+    margin-bottom: 50px;
+    margin-left: 3%;
+}
+#botao-calculardosagem{
+    /* margin-bottom: 40px; */
+}
+
+.containerOculto{
+    background-color: #E9E9ED ;
+    width: 100%;
+    
+}
+
+/* Tentando tornar o formulario de dosagem responsivo  */
+
+
+
+
+
+/* Pop Op */
+
+.button-popup {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button-popup:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    padding-top: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content-popup {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+/* light/ dark mode  */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+
+.lightDarkMode {
+  display: inline-block; /* Também faz com que o container do botão se comporte como um elemento em linha */
+ /*  margin-left: 30%; Adicione um espaço de margem à esquerda para separar o título do botão */
+ margin-left: auto;
+}
+
+* { 
+	box-sizing: border-box;  /*Encaixa o interruptor */
+}
+
+.lightDarkMode .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .lightDarkMode .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  }
+  
+  .lightDarkMode .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .lightDarkMode .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .lightDarkMode svg{
+    color: #f1c40f;
+  }
+
+
+  /* Fim do light dark mode */
+  .resultados{
+    /* display: flex;
+    justify-content: space-around; /* Alinha as divs horizontalmente com espaço entre elas */
+    /* align-items: center; */ 
+  }
+
+  .cabeca-form{
+    display: flex;
+    margin-top: 2%;
+    align-items: center; /* Alinhamento vertical */
+    width: 94%;
+    margin-left: 2%;
+  }

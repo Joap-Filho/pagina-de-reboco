@@ -1,0 +1,90 @@
+
+<main class="container">
+    
+
+    <form action="" class="form">
+        <h2>Reboco</h2>
+        <div class="conteudo">
+            <img  src="../assets/img/reboco-emboco-chapisco.png" alt="Description of the image">
+        </div>
+        <div id="" class="">
+            <!--Select que define qual div sera exposta -->
+            <select class="select-volume" name="" id="select-volume">
+                <option value="volume-conhecido">Área Conhecido</option>
+                <option value="volume-desconhecido">Área Desconhecido</option>
+            </select>
+
+            <!--Div Volume Conhecido, Inicialmente exposta-->
+            <div id="volume-conhecido" style="display: block;">
+                <div class="inner-div">
+                    <label for="label">Área:</label>
+                    <input type="number" value = "" placeholder="Volume em (m²)" id="volume" name="input1" required>
+                </div>
+                <div class="inner-div">
+                    <label for="label">Abertura:</label>
+                    <input type="number" value="" placeholder="Portas, janelas, áreas descontadas(m²)" id="quantidade" name="input2" required>
+                </div>
+                <div class="inner-div">
+                    <label for="label">Taxa de perda:</label>
+                    <input type="number" value="" placeholder="Taxa de perda em (%)" id="taxaperda" name="input3" required>
+                </div>
+            </div>
+
+            <!--Div Volume Desconhecido caso o formato seja bloco, inicialmente Oculta-->
+            <div id="volume-desconhecido"  style="display: none;">
+                <div class="inner-div" id="altura">
+                    <label for="label">Altura:</label>
+                    <input type="text" placeholder="Altura em (cm)" id="inputAltura" name="input1">
+                </div>
+                <div class="inner-div" id="raio">
+                    <label for="label">Raio:</label>
+                    <input type="text" placeholder="Raio em (cm)" id="inputRaio" name="input1">
+                </div>
+                <div class="inner-div" id="largura">
+                    <label for="label">Largura:</label>
+                    <input type="text" placeholder="Largura em (cm)" id="inputLargura" name="input1">
+                </div>
+                <div class="inner-div" id="comprimento">
+                    <label for="label">Comprimento:</label>
+                    <input type="text" placeholder="Comprimento em (cm)" id="inputComprimento" name="input1">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Quantidade:</label>
+                    <input type="text" placeholder="Quantidade em (un)" id="input" name="input2">
+                </div>
+                <div class="inner-div">
+                    <label for="label">Taxa de perda:</label>
+                    <input type="text" placeholder="Taxa de perda em (%)"  id="input" name="input3">
+                </div>
+            </div>
+        </div>
+
+          
+    
+            
+
+            <div id="botao-calculardosagem" class="div-botao-calcular">
+                <a href="#popup1">
+                    <button class="botao-calcular" onclick="calcularDosagem()">Calcular reboco</button>
+                </a>
+            </div>
+
+    
+            <!-- Conteudo do pop op de alerta sobre uso da plataforma -->
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2 style="margin-left: 15%;">Uso da plataforma</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content-popup">
+                        Não é de responsabilidade dos desenvolvedores da plataforma qualquer informação 
+                        que possa parecer divergente, é sempre importante o acompanhamento de um profissional.
+                    </div>
+                </div>
+            </div>
+
+        
+    </form>
+    <script src="./assets/js/calculadora.js"></script>
+
+
+</main>

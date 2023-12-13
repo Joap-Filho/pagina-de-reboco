@@ -33,13 +33,9 @@
 
 
     <div class="content">
-        <section class="formReboco">
 
-       
-
-        <div class="cabeca-form">
-            <h1 id="div-titulo">Calcular reboco</h1>  
-
+        <div>
+            <h1 id="div-titulo">Calcular reboco</h1>    
 
             <!-- Botão Light Dark mode  -->
             <div class="lightDarkMode">
@@ -76,7 +72,7 @@
                 </div>
                 <div class="inner-div">
                     <label for="label">Abertura:</label>
-                    <input type="number" value="" placeholder="Portas, janelas, áreas descontadas em (cm²)" id="abertura" name="input2" required>
+                    <input type="number" value="" placeholder="Portas, janelas, áreas descontadas(m²)" id="quantidade" name="input2" required>
                 </div>
                 <div class="inner-div">
                     <label for="label">Taxa de perda:</label>
@@ -114,13 +110,13 @@
 
         </div>
 
-        <!-- <div>
+        <div>
             <select class="select-volume" name="" id="select-material">
                 <option value="volume-conhecido">Emboço</option>
                 <option value="volume-desconhecido">Reboco</option>
                 <option value="volume-desconhecido">Chapisco</option>
             </select>
-        </div> -->
+        </div>
 
         <div  id="botao-calculardosagem" class="div-botao-calcular">
             <a href="#popup1"  >
@@ -141,7 +137,7 @@
             </div>
         </div>
 
-        </section>  
+         
     </div>
 
     <!-- Divs dos resultados  -->
@@ -153,9 +149,6 @@
          <div id="resultado" class="hidden formDosagem" style="margin-top: 50px;">
             <div id="dados-gerais" class="centralizado">
                 <label style="font-size: 18px; ">Chapisco 5mm</label>
-            </div>
-            <div id="dados-gerais" class="centralizado">
-                <label style="font-size: 18px; ">traço = 1 cimento : 4 areia grossa</label>
             </div>
             <div class="descricao">
                 <div class="box">
@@ -244,9 +237,6 @@
         <div id="dados-gerais" class="centralizado">
             <label style="font-size: 18px; ">Emboço 15mm</label>
         </div>
-        <div id="dados-gerais" class="centralizado">
-            <label style="font-size: 18px; ">traço = 1 cimento: 5 areia média</label>
-        </div>
         <div class="descricao">
             <div class="box">
                 <label>Descrição</label>
@@ -268,9 +258,9 @@
 
             </div>
             <div class="div-quantidade">
-                    <label id="resultado2-cimentom3" class="font-9"></label>
-                    <label id="resultado2-cimento" class="font-9"></label>
-                    <label id="resultado2-cimento-saco" class="font-9"></label>
+                    <label id="resultado-cimentom3" class="font-9"></label>
+                    <label id="resultado-cimento" class="font-9"></label>
+                    <label id="resultado-cimento-saco" class="font-9"></label>
                             
             </div>
             <div class="div-unidade">
@@ -292,9 +282,9 @@
 
             </div>
             <div class="div-quantidade">
-                    <label id="resultado2-areiam3" class="font-9"></label>
-                    <label id="resultado2-areia" class="font-9"></label>
-                    <label id="resultado2-areia-lata" class="font-9"></label>
+                    <label id="resultado-areiam3" class="font-9"></label>
+                    <label id="resultado-areia" class="font-9"></label>
+                    <label id="resultado-areia-lata" class="font-9"></label>
 
                 
             </div>
@@ -318,7 +308,7 @@
 
             </div>
             <div class="div-quantidade">
-                    <label id="resultado2-agua" class="font-9"></label>
+                    <label id="resultado-agua" class="font-9"></label>
 
                 
             </div>
@@ -334,9 +324,6 @@
     <div id="resultado3" class="hidden formDosagem" style="margin-top: 50px;">
         <div id="dados-gerais" class="centralizado">
             <label style="font-size: 18px; ">Reboco</label>
-        </div>
-        <div id="dados-gerais" class="centralizado">
-            <label style="font-size: 18px; ">traço = 1 cimento : 7 areia média</label>
         </div>
         <div class="descricao">
             <div class="box">
@@ -359,9 +346,9 @@
 
             </div>
             <div class="div-quantidade">
-                    <label id="resultado3-cimentom3" class="font-9"></label>
-                    <label id="resultado3-cimento" class="font-9"></label>
-                    <label id="resultado3-cimento-saco" class="font-9"></label>
+                    <label id="resultado-cimentom3" class="font-9"></label>
+                    <label id="resultado-cimento" class="font-9"></label>
+                    <label id="resultado-cimento-saco" class="font-9"></label>
                             
             </div>
             <div class="div-unidade">
@@ -383,9 +370,9 @@
 
             </div>
             <div class="div-quantidade">
-                    <label id="resultado3-areiam3" class="font-9"></label>
-                    <label id="resultado3-areia" class="font-9"></label>
-                    <label id="resultado3-areia-lata" class="font-9"></label>
+                    <label id="resultado-areiam3" class="font-9"></label>
+                    <label id="resultado-areia" class="font-9"></label>
+                    <label id="resultado-areia-lata" class="font-9"></label>
 
                 
             </div>
@@ -399,8 +386,31 @@
             
         </div>
 
-     
-        <!--Linha da Agua-->
+        <!--Linha da Brita-->
+        <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
+
+            <div class="centralizado div-descricao" >
+
+                        <label>Brita</label>
+
+            </div>
+            <div class="div-quantidade">
+                    <label id="resultado-britam3" class="font-9"></label>                
+                    <label id="resultado-brita" class="font-9"></label>
+                    <label id="resultado-brita-lata" class="font-9"></label>
+
+                
+            </div>
+            <div class="div-unidade">
+                    <label class="font-9">m³</label>
+                    <label class="font-9">Kg</label>
+                    <label class="font-9">Lata 18L</label>
+
+                
+            </div>
+            
+        </div>
+        <!--Linha da Areia-->
         <div style="justify-content: space-between; display: flex; margin-bottom: 10px; ">
 
             <div class="centralizado div-descricao" >
@@ -409,7 +419,7 @@
 
             </div>
             <div class="div-quantidade">
-                    <label id="resultado3-agua" class="font-9"></label>
+                    <label id="resultado-agua" class="font-9"></label>
 
                 
             </div>
