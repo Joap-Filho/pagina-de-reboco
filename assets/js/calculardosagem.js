@@ -16,16 +16,16 @@ function calcularDosagem() {
 
 
      // Calcular o chaoisco 5mm
-      var cimento = volume * 1.32;
-      var areia = volume * 7.48;
-      var brita = volume * 1016.40;
-      var agua = volume * 1.98;
+      var cimento = (volume - abertura ) * 1.32;
+      var areia = (volume - abertura )  * 7.48;
+      var brita = (volume - abertura )  * 1016.40;
+      var agua = (volume - abertura )  * 1.98;
 
      // Calcular o emboço 15mm
-     var cimentoEmboco = volume * 2.48;
-     var areiaEmboco = volume * 21.66;
-     var britaEmboco = volume * 10;
-     var aguaEmboco = volume * 5.98;
+     var cimentoEmboco = (volume - abertura ) * 2.48;
+     var areiaEmboco = (volume - abertura )  * 21.66;
+     var britaEmboco = (volume - abertura )  * 10;
+     var aguaEmboco = (volume - abertura ) * 5.98;
 
 
 
